@@ -2,9 +2,8 @@ import createServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
 
-
 const bare =  createServer('/bare/');
-const serve = new nodeStatic.Server('static/');
+const serve = new nodeStatic.Server('static-real/');
 
 const server = http.createServer();
 
